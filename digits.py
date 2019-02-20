@@ -11,13 +11,13 @@ def main():
         print('Warning: long waiting time')
 
     area = 0.0
-    for x in range(precision*2):
-        for y in range(precision*2):
+    for x in range(radius*2):
+        for y in range(radius*2):
             point = Point(x, y)
             if circle.is_in_the_circle(point):
                 area += 1
 
-    pi = area / precision**2
+    pi = area / radius**2
     print(pi)
 
 if __name__ == "__main__":
